@@ -6,13 +6,22 @@ function renderList(containerId, items, type) {
     card.className = "card";
 
     if (type === "products") {
-      card.innerHTML = `
-        <h3>${item.name}</h3>
-        <p>${item.description}</p>
-        <a class="button" href="/products/${item.slug}/">
-          View Tutorials
-        </a>
+      const link = document.createElement("a");
+      link.href = `/products/${item.slug}/`;
+      link.className = "card product-card";
+
+      link.innerHTML = `
+        <div class="product-image">
+          <img src="${item.image}" alt="${item.name}">
+        </div>
+
+        <div class="product-content">
+          <h3>${item.name}</h3>
+          <p>${item.description}</p>
+        </div>
       `;
+
+      container.appendChild(link);
     }
 
     if (type === "plugins") {

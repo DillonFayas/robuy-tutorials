@@ -1,7 +1,7 @@
 const products = [
   {
     name: "Advanced Fire Hose",
-    slug: "example-product",
+    slug: "advanced-fire-hose",
     description: "Full setup and usage tutorials."
   }
 ];

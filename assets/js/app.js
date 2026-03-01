@@ -21,7 +21,7 @@ function renderList(containerId, items, type) {
         </div>
       `;
 
-      container.appendChild(link);
+      card.appendChild(link);
     }
 
     if (type === "plugins") {

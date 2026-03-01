@@ -50,7 +50,7 @@ a {
 
 .nav-inner {
   align-items: center;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   padding: 16px 20px;
   display: flex;
@@ -161,7 +161,7 @@ a {
 }
 
 .product-image img {
-  max-height: 90px;
+  max-height: 100%;
   max-width: 80%;
   object-fit: contain;
   transition: transform .25s ease;

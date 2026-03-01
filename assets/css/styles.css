@@ -195,6 +195,7 @@ a {
 }
 
 .sidebar a:hover {
+  padding-left: 10px;
   background: rgba(138,103,243,.15);
   color: white;
   transform: translateX(4px);
@@ -211,6 +212,6 @@ a {
   width: 200px;
   height: 200px;
   object-fit: contain;
-  margin: 0 auto 12px auto;
+  margin-bottom: 12px;
   display: block;
 }

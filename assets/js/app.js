@@ -2,8 +2,6 @@ function renderList(containerId, items, type) {
   const container = document.getElementById(containerId);
 
   items.forEach(item => {
-    const card = document.createElement("div");
-    card.className = "card";
 
     if (type === "products") {
       const link = document.createElement("a");
@@ -21,10 +19,13 @@ function renderList(containerId, items, type) {
         </div>
       `;
 
-      card.appendChild(link);
+      container.appendChild(link);
     }
 
     if (type === "plugins") {
+      const card = document.createElement("div");
+      card.className = "card";
+
       card.classList.add("plugin-card");
 
       card.innerHTML = `
@@ -35,8 +36,8 @@ function renderList(containerId, items, type) {
           Download
         </a>
       `;
-    }
 
-    container.appendChild(card);
+      container.appendChild(card);
+    }
   });
 }

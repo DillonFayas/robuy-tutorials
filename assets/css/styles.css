@@ -252,30 +252,54 @@ a {
   height: 100%;
 }
 
-/* Button styling */
+/* Button base */
 .button.external {
+  position: relative;
   display: inline-flex;
-  align-items: center;          /* vertical center */
+  align-items: center;
   justify-content: center;
-  gap: 10px;                    /* space between text and icon */
+  gap: 10px;
   padding: 10px 20px;
-  background: #8a67f3;          /* base purple */
+  background: #8a67f3;        /* base color */
   color: white;
   font-weight: 500;
   border-radius: 8px;
   text-decoration: none;
-  transition: all 0.25s ease;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Add a pseudo-element for gradient hover */
+.button.external::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #8a67f3, #6f4fe0);
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: 0;
+}
+
+/* Button content above pseudo-element */
+.button.external > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* Hover animation */
 .button.external:hover {
-  transform: translateY(-3px) scale(1.03);  /* subtle lift + scale */
+  transform: translateY(-3px) scale(1.03);
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  background: linear-gradient(135deg, #8a67f3, #6f4fe0);
 }
 
-/* External icon size + centering */
+/* Show gradient on hover */
+.button.external:hover::before {
+  opacity: 1;
+}
+
+/* External icon */
 .external-icon svg {
   width: 20px;
   height: 20px;
@@ -284,7 +308,6 @@ a {
   opacity: 0.85;
 }
 
-/* Icon hover animation */
 .button.external:hover .external-icon svg {
   transform: translate(3px, -2px) scale(1.1);
   opacity: 1;

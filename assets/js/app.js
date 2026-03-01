@@ -30,7 +30,7 @@ function renderList(containerId, items, type) {
         <img src="${item.image}" alt="${item.name}">
         <h3>${item.name}</h3>
         <p>${item.description}</p>
-        <a class="button external" href="https://example.com" target="_blank" rel="noopener">
+        <a class="button external" href="${item.link}" target="_blank" rel="noopener">
           <span class="button-content">
             Get Plugin
             <span class="external-icon">

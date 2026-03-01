@@ -226,6 +226,7 @@ a {
   object-fit: contain;
   margin-bottom: 12px;
   display: block;
+  transition: transform .25s ease;
 }
 
 /* VIDEO EMBEDS */

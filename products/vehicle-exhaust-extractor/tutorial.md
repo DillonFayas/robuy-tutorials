@@ -15,10 +15,10 @@ Exhaust extractors can be duplicated and repositioned in order to add more. The 
 
 To add a connection port to a vehicle, drop the ExhaustConnection part into the body and position it over the exhaust pipe. Ensure that the green attachments are facing the outside of the pipe. Enable Constraint Details in the Model tab to see the attachments.
 <div class="tutorial-image">
-<img src="assets/images/exhaust-extractor-tutorial-image-1.png" alt="image1">
+<img src="/assets/images/exhaust-extractor-tutorial-image-1.png" alt="image1">
 </div>
 <div class="tutorial-image">
-<img src="assets/images/exhaust-extractor-tutorial-image-2.png" alt="image2">
+<img src="/assets/images/exhaust-extractor-tutorial-image-2.png" alt="image2">
 </div>
 
 ## Visual Adjustments

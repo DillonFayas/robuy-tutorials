@@ -25,8 +25,10 @@ function renderList(containerId, items, type) {
     }
 
     if (type === "plugins") {
+      card.classList.add("plugin-card");
+
       card.innerHTML = `
-        <img src="${item.image}" style="width:100%;border-radius:8px;margin-bottom:10px;">
+        <img src="${item.image}" alt="${item.name}">
         <h3>${item.name}</h3>
         <p>${item.description}</p>
         <a class="button" href="${item.link}" target="_blank">

@@ -6,6 +6,16 @@
   --muted: #a0a3ad;
 }
 
+@media (min-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,9 +29,9 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 40px 24px;
 }
 
 h1 {
@@ -102,8 +112,8 @@ a {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
 }
 
 /* Tutorial Steps */
@@ -139,6 +149,7 @@ a {
   overflow: hidden;
   border: 1px solid transparent;
   position: relative;
+  height: 100%;
 }
 
 .product-image {
@@ -171,4 +182,35 @@ a {
 
 .product-card:hover img {
   transform: scale(1.05);
+}
+
+/* STEP NAV LINKS */
+
+.sidebar a {
+  display: block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: var(--muted);
+  transition: all .18s ease;
+}
+
+.sidebar a:hover {
+  background: rgba(138,103,243,.15);
+  color: white;
+  transform: translateX(4px);
+}
+
+.sidebar a.active {
+  background: linear-gradient(135deg,#8a67f3,#6f4fe0);
+  color: white;
+}
+
+/* PLUGIN IMAGES */
+
+.plugin-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin: 0 auto 12px auto;
+  display: block;
 }

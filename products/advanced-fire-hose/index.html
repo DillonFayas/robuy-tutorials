@@ -195,7 +195,11 @@ document.getElementById("search").addEventListener("input", e => {
 
   document.querySelectorAll(".step").forEach(step => {
     const text = step.innerText.toLowerCase();
-    step.style.display = text.includes(value) ? "" : "none";
+    if (!text.includes(value)) {
+      step.classList.toggle("collapsed", true);
+    } else {
+      step.classList.toggle("collapsed", false);
+    }
   });
 });
 

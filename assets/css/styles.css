@@ -269,3 +269,11 @@ a {
   transform: translate(2px, -2px);
   opacity: 1;
 }
+
+/* TUTORIAL IMAGES */
+.tutorial-image {
+  max-height: 200px;
+  width: 100%;
+  border-radius: 8px;
+  margin: 20px 0;
+}

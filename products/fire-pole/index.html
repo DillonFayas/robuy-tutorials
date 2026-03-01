@@ -147,7 +147,9 @@ function buildSteps() {
 
       stepIndex++;
 
-      step = document.createElement("div");
+      let newDiv = document.createElement("div");
+
+      step = newDiv;
       step.className = "step";
       step.id = "step-" + stepIndex;
 
@@ -163,7 +165,7 @@ function buildSteps() {
 
       step.onclick = e => {
         if (e.target.tagName !== "A")
-          step.classList.toggle("collapsed");
+          newDiv.classList.toggle("collapsed");
       };
 
     } else if (step) {

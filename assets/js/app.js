@@ -24,9 +24,7 @@ function renderList(containerId, items, type) {
 
     if (type === "plugins") {
       const card = document.createElement("div");
-      card.className = "card";
-
-      card.classList.add("plugin-card");
+      card.className = "card plugin-card";
 
       card.innerHTML = `
         <img src="${item.image}" alt="${item.name}">

@@ -183,11 +183,16 @@ function buildSidebar() {
 }
 
 document.getElementById("search").addEventListener("input", e => {
-  const value = e.target.value.toLowerCase();
+  const value = e.target.value.toLowerCase().trim();
 
   document.querySelectorAll(".step").forEach(step => {
-    const text = step.innerText.toLowerCase();
-    step.style.display = text.includes(value) ? "block" : "none";
+    const text = step.textContent.toLowerCase();
+
+    if (text.includes(value)) {
+      step.style.display = "";
+    } else {
+      step.style.display = "none";
+    }
   });
 });
 

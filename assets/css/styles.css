@@ -208,6 +208,18 @@ a {
 
 /* PLUGIN IMAGES */
 
+.plugin-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(138,103,243,.6);
+  box-shadow:
+    0 8px 20px rgba(0,0,0,.3),
+    0 0 0 1px rgba(138,103,243,.25);
+}
+
+.plugin-card:hover img {
+  transform: scale(1.05);
+}
+
 .plugin-card img {
   width: 200px;
   height: 200px;

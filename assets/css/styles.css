@@ -252,65 +252,76 @@ a {
   height: 100%;
 }
 
-/* Button base */
+/* Base button */
 .button.external {
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 10px 20px;
-  background: #8a67f3;        /* base color */
+  padding: 10px 22px;
+  background: #8a67f3;             /* fallback base color */
   color: white;
   font-weight: 500;
   border-radius: 8px;
   text-decoration: none;
   overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Pseudo-element for gradient hover */
+/* Button content wrapper */
+.button-content {
+  position: relative;
+  z-index: 2;                       /* above the gradient */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Gradient pseudo-element */
 .button.external::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #8a67f3, #6f4fe0);
+  background: linear-gradient(120deg, #8a67f3, #6f4fe0, #8a67f3);
+  background-size: 200% 200%;
   border-radius: 8px;
   opacity: 0;
   transition: opacity 0.25s ease;
-  z-index: 0;       /* make sure it's behind the text/icon */
+  z-index: 1;                       /* behind content */
 }
 
-/* Button content above pseudo-element */
-.button.external > * {
-  position: relative;
-  z-index: 1;       /* text and icon stay above the gradient */
+/* Hover effects */
+.button.external:hover::before {
+  opacity: 1;
+  animation: gradient-slide 3s linear infinite;
 }
 
-/* Hover animation */
 .button.external:hover {
   transform: translateY(-3px) scale(1.03);
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-/* Show gradient on hover */
-.button.external:hover::before {
-  opacity: 1;
-}
-
-/* External icon */
+/* External icon sizing + animation */
 .external-icon svg {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   vertical-align: middle;
   transition: transform 0.25s ease, opacity 0.25s ease;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 .button.external:hover .external-icon svg {
   transform: translate(3px, -2px) scale(1.1);
   opacity: 1;
+}
+
+/* Gradient sliding animation */
+@keyframes gradient-slide {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* TUTORIAL IMAGES */

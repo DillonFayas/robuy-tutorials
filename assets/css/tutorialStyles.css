@@ -101,17 +101,17 @@ iframe {
 .toggle-btn .icon {
   width: 10px;
   height: 10px;
-  border-right: 2px solid #333;
-  border-bottom: 2px solid #333;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
   transform: rotate(-45deg); /* closed (points right) */
   transition: transform 0.2s ease;
 }
 
 /* Open state */
-.toggle-btn.is-open {
+/* .toggle-btn.is-open {
   border-color: #6b46c1;
   background: #f3e8ff;
-}
+} */
 
 .toggle-btn.is-open .icon {
   transform: rotate(45deg); /* open (points down) */

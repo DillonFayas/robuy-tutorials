@@ -82,7 +82,7 @@ iframe {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #ccc;
+    border: 1px solid #33353f;
     border-radius: 6px;
     background: #191a1f;
     cursor: default;
@@ -99,7 +99,7 @@ iframe {
 }
 
 .toggle-btn .icon {
-    color: #ccc;
+    color: #33353f;
     width: 16px;
     height: 16px;
     display: block;

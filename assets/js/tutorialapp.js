@@ -74,6 +74,9 @@ function buildSteps() {
                     });
                 } else {
                     body.style.maxHeight = body.scrollHeight + "px";
+                    requestAnimationFrame(() => {
+                        body.style.maxHeight = body.scrollHeight + "px";
+                    });
                 }
             });
 

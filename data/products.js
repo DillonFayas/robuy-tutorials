@@ -36,16 +36,22 @@ const products = [
     image: "/assets/images/automatic-fire-generator.png"
   },
   {
-    name: "Bearcat Animation Running Boards",
-    slug: "bearcat-running-boards",
-    description: "Full setup and usage tutorials.",
-    image: "/assets/images/bearcat-running-boards.png"
-  },
-  {
     name: "Body/Dash Cameras",
     slug: "body-dash-cameras",
     description: "Full setup and usage tutorials.",
     image: "/assets/images/body-dash-cameras.png"
+  },
+  {
+    name: "Team Changer",
+    slug: "team-changer",
+    description: "Full setup and usage tutorials.",
+    image: "/assets/images/team-changer.png"
+  },
+  {
+    name: "Trunk System",
+    slug: "trunk-system",
+    description: "Full setup and usage tutorials.",
+    image: "/assets/images/trunk-system.png"
   },
   {
     name: "Bollard Barriers",
@@ -72,21 +78,21 @@ const products = [
     image: "/assets/images/handcuffs.png"
   },
   {
+    name: "Fire Hose",
+    slug: "fire-hose",
+    description: "Full setup and usage tutorials.",
+    image: "/assets/images/fire-hose.png"
+  },
+  {
+    name: "Bearcat Animation Running Boards",
+    slug: "bearcat-running-boards",
+    description: "Full setup and usage tutorials.",
+    image: "/assets/images/bearcat-running-boards.png"
+  },
+  {
     name: "Standard Running Boards",
     slug: "standard-running-boards",
     description: "Full setup and usage tutorials.",
     image: "/assets/images/standard-running-boards.png"
   },
-  {
-    name: "Team Changer",
-    slug: "team-changer",
-    description: "Full setup and usage tutorials.",
-    image: "/assets/images/team-changer.png"
-  },
-  {
-    name: "Trunk System",
-    slug: "trunk-system",
-    description: "Full setup and usage tutorials.",
-    image: "/assets/images/trunk-system.png"
-  }
 ];

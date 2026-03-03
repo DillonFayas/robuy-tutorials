@@ -81,6 +81,7 @@ iframe {
     padding: 0;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     border: 1px solid #ccc;
     border-radius: 6px;
     background: #191a1f;
@@ -90,7 +91,7 @@ iframe {
 
 .toggle-btn:hover {
     border-color: #8a67f3;
-    background: #303238;
+    background: #232428;
 }
 
 .toggle-btn:hover .icon {
@@ -101,6 +102,7 @@ iframe {
     color: #ccc;
     width: 16px;
     height: 16px;
+    display: block;
     transition: transform 0.2s ease;
     transform-origin: 50% 50%;
 }

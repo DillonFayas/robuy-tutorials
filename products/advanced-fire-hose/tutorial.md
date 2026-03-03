@@ -24,7 +24,7 @@ Download Plugin:
 ## Getting Started
 
 <div class="video">
-<iframe src="https://www.youtube.com/embed/ySaBV1iYI6U"></iframe>
+<iframe src="https://www.youtube.com/embed/ruZG7A2Me0E"></iframe>
 </div>
 
 ## Team Whitelist

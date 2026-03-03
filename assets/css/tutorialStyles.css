@@ -89,24 +89,24 @@ iframe {
 }
 
 .toggle-btn:hover {
-    color: #8a67f3;
     border-color: #8a67f3;
     background: #303238;
 }
 
 .toggle-btn .icon {
-  width: 16px;
-  height: 16px;
-  transition: transform 0.2s ease;
-  transform-origin: 50% 50%;
+    color: #8a67f3;
+    width: 16px;
+    height: 16px;
+    transition: transform 0.2s ease;
+    transform-origin: 50% 50%;
 }
 
 /* Closed: points right */
 .toggle-btn .icon {
-  transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 /* Open: points down */
 .toggle-btn.is-open .icon {
-  transform: rotate(0deg);
+    transform: rotate(0deg);
 }

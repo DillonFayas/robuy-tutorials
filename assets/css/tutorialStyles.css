@@ -93,8 +93,12 @@ iframe {
     background: #303238;
 }
 
-.toggle-btn .icon {
+.toggle-btn:hover .icon {
     color: #8a67f3;
+}
+
+.toggle-btn .icon {
+    color: #ccc;
     width: 16px;
     height: 16px;
     transition: transform 0.2s ease;

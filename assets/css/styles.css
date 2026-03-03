@@ -128,7 +128,7 @@ a {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
   gap: 24px;
 }
 
@@ -295,7 +295,7 @@ a {
 
 .button.external {
   position: relative;
-  display: inline-flex;
+  /* display: inline-flex; */
   align-items: center;
   justify-content: center;
   gap: 8px;

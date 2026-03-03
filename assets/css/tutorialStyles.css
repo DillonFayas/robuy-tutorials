@@ -84,35 +84,28 @@ iframe {
     border-radius: 6px;
     background: #191a1f;
     cursor: default;
-    font-size: 14px;
-    transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .toggle-btn:hover {
-    color: #8a67f3;
     border-color: #8a67f3;
     background: #303238;
 }
 
 .toggle-btn:hover .icon {
-    border-color: #8a67f3;
+    color: #8a67f3;
 }
 
 .toggle-btn .icon {
-  width: 10px;
-  height: 10px;
-  border-right: 2px solid #ccc;
-  border-bottom: 2px solid #ccc;
-  transform: rotate(-45deg); /* closed (points right) */
   transition: transform 0.2s ease;
+  transform-origin: 50% 50%;
 }
 
-/* Open state */
-/* .toggle-btn.is-open {
-  border-color: #6b46c1;
-  background: #f3e8ff;
-} */
+/* Closed: points right */
+.toggle-btn .icon {
+  transform: rotate(0deg);
+}
 
+/* Open: points down */
 .toggle-btn.is-open .icon {
-  transform: rotate(45deg); /* open (points down) */
+  transform: rotate(90deg);
 }

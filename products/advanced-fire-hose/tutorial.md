@@ -6,7 +6,7 @@ Open a **blank** baseplate project in Roblox Studio and drop the file in.
 
 Download Plugin:
 <div>
-<a class="button external" href="${item.link}" target="_blank" rel="noopener">
+<a class="button external" href="https://create.roblox.com/store/asset/10368363581/Poncakes-Plugin" target="_blank" rel="noopener">
     <span class="button-content">
     Get Plugin
     <span class="external-icon">

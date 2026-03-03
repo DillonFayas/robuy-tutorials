@@ -29,8 +29,23 @@ function buildSteps() {
             step.className = "step";
             step.id = "step-" + stepIndex;
 
+            const expandButton = document.createElement("button");
+            expandButton.className = "toggle-btn";
+            expandButton.setAttribute("aria-expanded", "false");
+            expandButton.innerHTML = `<span class="icon"></span>
+            <span class="label">Section</span>`;
+
+            const buttonWrapper = document.createElement("span");
+            buttonWrapper.className = "expand-button-wrapper";
+            buttonWrapper.appendChild(expandButton);
+
+            const textNode = document.createTextNode(
+            ` Step ${stepIndex}: ${node.innerText}`
+            );
+
             const header = document.createElement("h2");
-            header.innerText = `Step ${stepIndex}: ${node.innerText}`;
+            header.appendChild(buttonWrapper);
+            header.appendChild(textNode);
 
             const body = document.createElement("div");
             body.className = "step-body";
@@ -39,10 +54,19 @@ function buildSteps() {
             step.appendChild(body);
             tutorial.appendChild(step);
 
-            step.onclick = e => {
-                if (e.target.tagName !== "A")
-                    newDiv.classList.toggle("collapsed");
-            };
+            expandButton.addEventListener("click", () => {
+                expandButton.classList.toggle("is-open");
+                newDiv.classList.toggle("collapsed");
+                expandButton.setAttribute(
+                    "aria-expanded",
+                    expandButton.classList.contains("is-open")
+                );
+            });
+
+            // step.onclick = e => {
+            //     if (e.target.tagName !== "A")
+            //         newDiv.classList.toggle("collapsed");
+            // };
 
         } else if (step) {
             step.querySelector(".step-body").appendChild(node);

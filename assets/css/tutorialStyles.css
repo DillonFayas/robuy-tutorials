@@ -103,10 +103,10 @@ iframe {
 
 /* Closed: points right */
 .toggle-btn .icon {
-  transform: rotate(0deg);
+  transform: rotate(90deg);
 }
 
 /* Open: points down */
 .toggle-btn.is-open .icon {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }

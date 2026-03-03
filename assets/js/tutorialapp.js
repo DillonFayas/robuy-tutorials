@@ -69,14 +69,14 @@ function buildSteps() {
                 );
                 if (isCollapsed) {
                     body.style.maxHeight = body.scrollHeight + "px";
-                    requestAnimationFrame(() => {
-                        body.style.maxHeight = "0px";
-                    });
+                    requestAnimationFrame(() => { body.style.maxHeight = "0px"; });
                 } else {
                     body.style.maxHeight = body.scrollHeight + "px";
-                    requestAnimationFrame(() => {
-                        body.style.maxHeight = body.scrollHeight + "px";
-                    });
+                    body.addEventListener(
+                    "transitionend",
+                    () => { body.style.maxHeight = "none"; },
+                    { once: true }
+                    );
                 }
             });
 

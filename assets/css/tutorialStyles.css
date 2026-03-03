@@ -58,7 +58,7 @@
 .step-body {
   overflow: hidden;
   max-height: 0;
-  opacity: 0;
+  opacity: 1;
   transition: max-height 0.3s ease, opacity 0.2s ease;
 }
 
@@ -67,7 +67,8 @@
 }
 
 .step.collapsed .step-body {
-    display: none;
+    max-height: 0;
+    opacity: 0;
 }
 .step.collapsed .step h2 {
     color: #514e5b;

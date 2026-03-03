@@ -92,6 +92,7 @@
 }
 
 .step.collapsed h2 {
+    margin-bottom: 0;
     color: #514e5b;
 }
 

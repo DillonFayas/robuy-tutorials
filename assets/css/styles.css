@@ -98,6 +98,11 @@ a {
   opacity: 1;
 }
 
+.nav-links {
+  display: flex;
+  height: stretch;
+}
+
 .card {
   background: var(--card);
   padding: 20px;

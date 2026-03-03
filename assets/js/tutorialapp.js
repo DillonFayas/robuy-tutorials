@@ -110,11 +110,28 @@ document.getElementById("search").addEventListener("input", e => {
     const value = e.target.value.toLowerCase().trim();
 
     document.querySelectorAll(".step").forEach(step => {
-        const text = step.innerText.toLowerCase();
-        if (!text.includes(value)) {
-            step.classList.toggle("collapsed", true);
-        } else {
-            step.classList.toggle("collapsed", false);
+        const body = step.querySelector(".step-body");
+        const matches = step.innerText.toLowerCase().includes(value);
+
+        if (!matches && !step.classList.contains("collapsed")) {
+            // Collapse
+            step.classList.add("collapsed");
+            body.style.maxHeight = body.scrollHeight + "px";
+            requestAnimationFrame(() => {
+                body.style.maxHeight = "0px";
+            });
+        } else if (matches && step.classList.contains("collapsed")) {
+            // Expand
+            step.classList.remove("collapsed");
+            body.style.maxHeight = body.scrollHeight + "px";
+
+            body.addEventListener(
+                "transitionend",
+                () => {
+                    body.style.maxHeight = "none"; // natural height
+                },
+                { once: true }
+            );
         }
     });
 });

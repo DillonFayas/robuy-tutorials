@@ -32,8 +32,7 @@ function buildSteps() {
             const expandButton = document.createElement("button");
             expandButton.className = "toggle-btn";
             expandButton.setAttribute("aria-expanded", "false");
-            expandButton.innerHTML = `<span class="icon"></span>
-            <span class="label">Section</span>`;
+            expandButton.innerHTML = `<span class="icon"></span>`;
 
             const buttonWrapper = document.createElement("span");
             buttonWrapper.className = "expand-button-wrapper";

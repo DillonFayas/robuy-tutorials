@@ -52,7 +52,7 @@
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    cursor: pointer;
+    cursor: default;
 }
 
 .step.collapsed .step-body {
@@ -76,20 +76,26 @@ iframe {
 }
 
 .toggle-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 14px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  background: #fff;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background 0.2s ease, border-color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #191a1f;
+    cursor: default;
+    font-size: 14px;
+    transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .toggle-btn:hover {
-  background: #f5f5f5;
+    color: #8a67f3;
+    border-color: #8a67f3;
+    background: #303238;
+}
+
+.toggle-btn:hover .icon {
+    border-color: #8a67f3;
 }
 
 .toggle-btn .icon {

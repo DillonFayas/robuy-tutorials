@@ -32,5 +32,5 @@ Either the folder or the model named “DashCamera” can be placed into a car m
 
 ## Full Tutorial:
 <div class="video">
-<iframe src="https://www.youtube.com/embed/_CjRSwV2h-s"></iframe>
+<iframe src="https://www.youtube.com/embed/_CjRSwV2h-s" allowfullscreen></iframe>
 </div>

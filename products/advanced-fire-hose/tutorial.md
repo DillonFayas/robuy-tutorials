@@ -25,13 +25,13 @@ Download Plugin:
 ## Getting Started
 
 <div class="video">
-<iframe src="https://www.youtube.com/embed/ruZG7A2Me0E"></iframe>
+<iframe src="https://www.youtube.com/embed/qfY3FuUiBP0"></iframe>
 </div>
 
 ## Team Whitelist
 
 <div class="video">
-<iframe src="https://www.youtube.com/embed/olFyb1NOcqI"></iframe>
+<iframe src="https://www.youtube.com/embed/fdaaRp7suXE"></iframe>
 </div>
 
 ## Setting up a Truck

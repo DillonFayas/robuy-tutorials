@@ -112,7 +112,7 @@ function buildSidebar() {
             e.preventDefault();
 
             const target = document.getElementById("step-" + (i + 1));
-            const y = target.getBoundingClientRect().top + window.scrollY - 60;
+            const y = target.getBoundingClientRect().top + window.scrollY - 70;
 
             window.scrollTo({
                 top: y,

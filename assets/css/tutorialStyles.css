@@ -66,7 +66,6 @@
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    cursor: default;
 }
 
 .step-body {
@@ -109,6 +108,7 @@ iframe {
 }
 
 .toggle-btn {
+    cursor: grab;
     width: 30px;
     height: 30px;
     padding: 0;
@@ -118,7 +118,6 @@ iframe {
     border: 1px solid #33353f;
     border-radius: 6px;
     background: #191a1f;
-    cursor: default;
     transition: background 0.2s ease, border-color 0.2s ease;
 }
 

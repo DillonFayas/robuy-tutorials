@@ -43,23 +43,23 @@ Download Plugin:
 ## Adding a Fire Hydrant
 
 <div class="video">
-<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-</div>
-
-## Supply Hose
-
-<div class="video">
-<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/U84z_W9UkGY" allowfullscreen></iframe>
 </div>
 
 ## Attack Hose
 
 <div class="video">
-<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/N8AOm6RgejY" allowfullscreen></iframe>
+</div>
+
+## Supply Hose
+
+<div class="video">
+<iframe src="https://www.youtube.com/embed/sSwXnTAhemk" allowfullscreen></iframe>
 </div>
 
 ## All about Attachments
 
 <div class="video">
-<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/FtSINWLJ0MQ" allowfullscreen></iframe>
 </div>

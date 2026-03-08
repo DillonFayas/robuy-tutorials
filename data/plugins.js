@@ -7,14 +7,14 @@ const plugins = [
   },
   {
     name: "Reclass",
-    description: "By [@Eltobb](https://www.roblox.com/users/1670764/profile)\nClass converter plugin",
-    image: "/assets/images/PoncakeLogo.png",
+    description: "By Eltobb<br>Class converter plugin",
+    image: "/assets/images/ReclassIcon.png",
     link: "https://create.roblox.com/store/asset/2867765019/Reclass-classic-the-original-Roblox-reclasser"
   },
   {
     name: "Tool Grip Visual Editor",
-    description: "By [@MetaGamesLLC](https://www.roblox.com/communities/33561726/Meta-Games-LLC#!/about)\nvisual editor for adjusting Roblox tool grip",
-    image: "/assets/images/ToolGripEditor.png",
+    description: "By MetaGamesLLC<br>Visual editor for adjusting Roblox tool grip",
+    image: "/assets/images/ToolGripEditorIcon.png",
     link: "https://create.roblox.com/store/asset/16651031857/Tool-Grip-Visual-Editor"
   }
 ];

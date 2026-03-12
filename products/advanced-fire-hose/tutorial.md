@@ -66,6 +66,12 @@ Download the following plugins:
 <iframe src="https://www.youtube.com/embed/pzyMrTaYPoE" allowfullscreen></iframe>
 </div>
 
+## Truck Ignore Values
+
+<div class="video">
+<iframe src="https://www.youtube.com/embed/2iNlExi3Of4" allowfullscreen></iframe>
+</div>
+
 ## Adding a Fire Hydrant
 
 <div class="video">

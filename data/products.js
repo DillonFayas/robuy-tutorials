@@ -12,6 +12,12 @@ const products = [
     image: "/assets/images/advanced-fire-hose-expansion-pack.png"
   },
   {
+    name: "Enhanced Vehicle Exhaust Extractor",
+    slug: "enhanced-vehicle-exhaust-extractor",
+    description: "Full setup and usage tutorials.",
+    image: "/assets/images/vehicle-exhaust-extractor.png"
+  },
+  {
     name: "Vehicle Exhaust Extractor",
     slug: "vehicle-exhaust-extractor",
     description: "Full setup and usage tutorials.",
